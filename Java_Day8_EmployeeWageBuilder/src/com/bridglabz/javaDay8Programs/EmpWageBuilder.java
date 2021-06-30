@@ -6,6 +6,7 @@ public class EmpWageBuilder {
 	public static final int WagePerHr = 20, FullDayHr = 8, PartThimeHr = 4;
 	public static final int isFulltime = 1, isParttime = 2;
 	public static int cnt = 0;
+	
 	public static int Attendance() {
 		Random random = new Random();
 		int check = random.nextInt(3);
@@ -37,5 +38,14 @@ public class EmpWageBuilder {
 			
 		return 0;
 		}
+	}
+	
+	public static void getMonthlyWage() {
+		
+		int TotalWage = 0;
+		for(int Day = 1; Day <= 20; Day++) {
+			TotalWage += usingSwitch();
+		}
+		System.out.println("Employee Monthly wager = "+TotalWage);
 	}
 }
