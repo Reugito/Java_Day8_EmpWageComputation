@@ -9,4 +9,5 @@ public class EmpWageBuilder {
 		int check = random.nextInt(3);
 		return check;
 	}
+	
 }
